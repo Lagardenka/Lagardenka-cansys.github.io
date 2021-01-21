@@ -1,0 +1,21 @@
+/*comment*/
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;900');
+
+body{
+    color:black;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 1.2;
+}
+
+.text-brand {
+    color:blue;
+}
+.text-uppercase {
+    text-transform: uppercase;
+}
+.font-weight-bold {
+    font-weight: 700;
+}
