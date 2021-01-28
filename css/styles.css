@@ -90,7 +90,7 @@ a:hover {
 }
 
 .mainslider {
-    background-image: url("../images/main.jpg");
+    background-image: url("../images/IXB9A2626.CR2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -100,7 +100,7 @@ a:hover {
 .mainslider header {
     padding-top: 8em;
     padding-left: 2em;
-    padding-bottom: 2em;
+    padding-bottom: 8em;
 }
 
 img{
