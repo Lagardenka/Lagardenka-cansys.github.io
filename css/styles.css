@@ -2,32 +2,151 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/minireset.css/0.0.2/minireset.min.css');
 
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+html {
+    font-size: var(--root-font-size);
+}
 body{
-    color:black;
+    color:var(--black);
     font-family: 'Inter', sans-serif;
     font-weight: 400;
-    font-size: 1rem;
+    font-size: var(--root-font-size);
     line-height: 1.5;
+    background-color: var(--white);
     margin: 0;
+    overflow-x: hidden;
 }
 
+/*navigation*/
+nav {
+    background-color:white;
+    padding: 1.5rem 2rem;
+    line-height: 1.5;
+    /*display: flex;*/
+}
+/*.navbar {
+    display: flex;
+    line-height: inherit;
+    align-items: center;
+    justify-content: space-between;
+}*/
 .navbar-info {
-    padding-top: 1em;
-    padding-bottom: 1em;
-    background-color: white;
-    max-width: 100%;
-    margin: 0 auto;
+    list-style: none;
+    display: flex;
+    line-height: inherit;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar-info a {
+    color: black;
+    text-transformation: capitalize;
+    letter-spacing: 0.1rem;
+    font-weight: regular;
+    display: inline-block;
+    width: 100%;
+    margin-left: 1rem;
+}
+.navbar-info-lang {
+    position: absolute;
+    top: 1.5rem;
+    left: 2rem;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar-info-lang li {
+    margin: 0 1rem 0 1rem;
+}
+.navbar-info-cont {
+    position: absolute;
+    top: 1.5rem;
+    left: 25%;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar-info-cont li{
+    margin-right: 1rem;
+}
+.navbar-info-soc {
+    position: absolute;
+    top: 1.5rem;
+    left: 75%;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar-info-soc li {
+    margin-left: 1rem;
+}
+.navbar-info-s {
+    position: absolute;
+    top: 1.5rem;
+    right: 3rem;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar {
+    list-style: none;
+    display: flex;
+    line-height: inherit;
+    align-items: center;
+    justify-content: space-between;
+    /*padding: 1rem 0 1rem 0;*/
+    background-color: rgb(226, 226, 226);
+    /*margin: 1rem 1rem 1rem 1rem;*/
+}
+.navbar-nav {
+    list-style: none;
+    display: flex;
+    line-height: inherit;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1rem;
+    background-color: transparent;
+    /*position: absolute;
+    top: 5rem;
+    right: 3rem;*/
+}
+.navbar-nav li{
+    margin-left: 2rem;
+}
+.navbar-nav a {
+    color: black;
+    font-size: 1.2rem;
+    text-transformation: capitalize;
+    letter-spacing: 0.1rem;
+    font-weight: semibold;
+    display: inline-block;
+    width: 100%;
+    padding: 0.75 0;
+}
+.nav-img{
+    width: 10%;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 5rem;
+    left: 3rem;
 }
 
-.navbar-nav {
-    padding-top: 1em;
-    padding-bottom: 1em;
+/*layouts*/
+.container {
     background-color: rgb(226, 226, 226);
     max-width: 100%;
     margin: 0 auto;
+    padding: 0
+} 
+.footer {
+    padding: 6em;
+    background-color: darkgray;
+    color:white;
 }
 
+/*text*/
 a {
     color: black;
     text-decoration: none;
@@ -36,15 +155,21 @@ a:hover {
     color:orange;
     text-decoration: none;
 }
+.main-text {
+    padding: 2em 30%;
+    background-color: transparent;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.text-center {
+    text-align: center;
+}
+.text-muted {}
 
+/*button*/
 .btn-lang {
-    color: rgb(32, 86, 204);
+    background-color: rgb(226, 226, 226);
   }
-.btn-lang:hover {
-    color: orange;
-    text-decoration: none;
-  }  
-
 
 .btn-slider {
     color: rgb(32, 86, 204);
@@ -61,21 +186,6 @@ a:hover {
     border:orange solid 2px;
     border-radius: 12px;
 }
-
-.container {
-    background-color: rgb(226, 226, 226);
-    max-width: 100%;
-    
-    margin: 0 auto;
-} 
-
-.main-text {
-    padding: 1em 30%;
-    background-color: transparent;
-    max-width: 100%;
-    margin: 0 auto;
-}
-
 .btn-service {
     color: rgb(32, 86, 204);
     background-color: white;
@@ -88,7 +198,18 @@ a:hover {
     padding: 1em 1.5em;
     border:orange solid 2px;
 }
+.btn-sm {
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+}
 
+/*image*/
+img{
+    display: block;
+}
+.img-fluid {
+    max-width: 100%;
+}
 .mainslider {
     background-image: url("../images/IXB9A2626.CR2.jpg");
     background-repeat: no-repeat;
@@ -96,20 +217,19 @@ a:hover {
     background-position: center;
     /* min-height: 20vh; */
 }
-
 .mainslider header {
-    padding-top: 8em;
+    padding-top: 10em;
     padding-left: 2em;
-    padding-bottom: 8em;
+    padding-bottom: 10em;
 }
 
-img{
-    display: block;
-}
+
 
 .im-pr {
     width: 25%;
 }
+
+
 
 .bg-pr {
     background-color: white;
@@ -128,9 +248,91 @@ img{
     margin-bottom: 2em;
 }
 
-.footer {
-    padding: 6em;
-    background-color: darkgray;
-    color:white;
+
+
+/*order*/
+.row {
+    width: 100%;
+    display: flex;
+    /* flex-direction: row;
+    flex-wrap: nowrap; */
+    flex-flow: row wrap;
+    }
+.col {
+    width: 100%;
+    padding: 0 15px;
 }
+.col-1 {
+    max-width: calc(100%/12);
+    flex: 0 0 calc(100%/12);
+}
+.col-2 {
+    max-width: calc(2*100%/12);
+    flex: 0 0 calc(2*100%/12);
+}
+.col-3 {
+    max-width: calc(3*100%/12);
+    flex: 0 0 calc(3*100%/12);
+}
+.col-4 {
+    max-width: calc(4*100%/12);
+    flex: 0 0 calc(4*100%/12);
+}
+.col-5 {
+    max-width: calc(5*100%/12);
+    flex: 0 0 calc(5*100%/12);
+}
+.col-6 {
+    max-width: calc(6*100%/12);
+    flex: 0 0 50%;
+}
+.col-7 {
+    max-width: calc(7*100%/12);
+    flex: 0 0 calc(7*100%/12);
+}
+.col-8 {
+    max-width: calc(8*100%/12);
+    flex: 0 0 calc(8*100%/12);
+}
+.col-9 {
+    max-width: calc(9*100%/12);
+    flex: 0 0 calc(9*100%/12);
+}
+.col-10 {
+    max-width: calc(10*100%/12);
+    flex: 0 0 calc(10*100%/12);
+}
+.col-11 {
+    max-width: calc(11*100%/12);
+    flex: 0 0 calc(11*100%/12);
+}
+.col-12 {
+    max-width: 100%;
+    flex: 0 0 100%;
+}
+.col-auto {
+    flex: 0 0 auto;
+}
+.float-left{
+    float: left;
+}
+.float-right {
+    float: right;
+}
+.clearfix::after{
+    clear: both;
+    content: " ";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+
+.list-inline {
+    list-style: none;
+}
+.list-inline-item {
+    display: inline-block;
+}
+
 
