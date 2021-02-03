@@ -4,25 +4,46 @@
         <meta charset="UTF-8">
         <meta name=”viewport” content=”width=device-width, initial-scale=1.0”>
         <title>CANSYS - Автономна каналізація</title>
-
+        
+        <link href="css/variables.css" rel="stylesheet">
         <link href="css/styles.css" rel="stylesheet">
+    
     </head>
+
     <body>
         <header>
             <!--navigation-->
             <nav id="nav">
-            <div id="navbar">
-                <ul class="navbar-info">
-                    <li><a href="index.html" class="btn-lang">UA</a></li>
-                    <li><a href="indexen.html" class="btn-lang">EN</a></li>
-                    <li><a href="">+380936648516</a></li>
-                    <li><a href="">cansysua@gmail.com</a></li>
-                    <li><a href=""><i class="fab fa-facebook"></i></a></li>
-                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
-                    <li><a href=""><i class="fas fa-search"></i></a></li>
-                </ul>
+            <div class="" id="navbar">
+                <div class="navbar-info">
+                    <div class="navbar-info-lang row">
+                        <ul class="row">
+                        <li><a href="index.html" class="btn-lang" title="Українською">UA</a></li>
+                        <li><a href="indexen.html" title="In English">EN</a></li>
+                        </ul>
+                    </div>
+                    <div class="navbar-info-cont row">
+                        <ul class="row">
+                        <li><a href="">+380936648516</a></li>
+                        <li><a href="">cansysua@gmail.com</a></li>
+                        </ul>
+                    </div>
+                    <div class="navbar-info-soc row">
+                        <ul class="row">
+                        <li><a href="" title="Facebook"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="" title="Instagram"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="" title="YouTube"><i class="fab fa-youtube"></i></a></li>
+                        </ul> 
+                    </div>  
+                    <div class="navbar-info-s">
+                        <ul class="">
+                        <li><a href="" title="Пошук"><i class="fas fa-search"></i></a></li>
+                        </ul> 
+                    </div>
+                </div>
+                <div class="navbar">
+                    <a href="index.html"><img src="./images/Logo_site.jpg" class="nav-img"></a>
                 <ul class="navbar-nav">
-                    <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">ПРО НАС</a></li>
                     <li><a href="technology.html">ТЕХНОЛОГІЇ CANSYS</a></li>
                     <li><a href="products.html">МОДЕЛЬНИЙ РЯД</a></li>
@@ -30,6 +51,7 @@
                     <li><a href="download.html">ФАЙЛИ ДЛЯ ЗАВАНТАЖЕННЯ</a></li>
                     <li><a href="contacts.html">КОНТАКТИ</a></li>
                 </ul> 
+                </div>
             </div>
             </nav>
             <!--./navigation-->
@@ -58,27 +80,88 @@
                     <a class="btn-service"><i class="fas fa-tools"> Заявка на сервіс</i></a>
                     <a class="btn-service"><i class="fas fa-truck"> Заявка на монтаж</i></a>
                 </article>
-            <!--services-->
         </section>
-
-        <section class="my-3">
-                <header class="main-text">
-                <!--header-->
-                <h2>Автономна каналізація - що це?</h2>
-                </header>
-            <!--catalog-->
-            <!--product-->
-                <div class="bg-pr">
-                    <h3>Станція біологічної очистки CANSYS Bio</h3>
-                    <img class="im-pr" src="./images/_DSC4719.jpg">
-                    <div>
-                        <ul>
-                            <li><a href="">Детальніше</a></li>
-                            <li><a href="">Задати питання</a></li>
-                        </ul>
-                    </div>
+        <!--services-->
+        <section class="py-5 bg-gray">
+            <div class="row">
+                <div class="col col-4 float-left">
+                    <header>
+                        <i class="fas fa-database"></i>
+                        <h2>Заявка на очисні споруди</h2>
+                    </header>
                 </div>
-            <!--./product-->
+                <div class="col col-4 float-left">
+                    <header>
+                        <i class="fas fa-tools "></i>
+                        <h2>Заявка на сервіс</h2>
+                    </header>
+                </div>
+                <div class="col col-4 float-right">
+                    <header>
+                        <i class="fas fa-truck"></i>
+                        <h2>Заявка на монтаж</h2>
+                    </header>
+                </div>
+            </div>
+        </section>
+        <div class="clearfix"></div>
+
+        <section class="py-3">
+            <header class="main-text">
+            <!--header-->
+            <h2>Автономна каналізація - що це?</h2>
+            </header>
+            <!--catalog-->
+            <div class="row">
+                <!--product-->
+                    <div class="product col col-3 text-center">
+                        <div>
+                        <h3 class="text-muted">Станція біологічної очистки CANSYS Bio</h3>
+                        <img src="./images/_DSC4719.jpg" class="img-fluid">
+                            <div>
+                                <ul class="list-inline">
+                                    <li class="list-inline-item">
+                                        <a href="" class="btn btn-sm" title="Детальніше">Детальніше</a></li>
+                                    <li class="list-inline-item">
+                                        <a href="" title="Задати питання">Задати питання</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                <!--./product-->
+                <!--product-->
+                    <div class="product col col-3 text-center">
+                        <div>
+                        <h3 class="text-muted">Станція біологічної очистки CANSYS Bio</h3>
+                        <img src="./images/_DSC4719.jpg" class="img-fluid">
+                            <div>
+                                <ul class="list-inline">
+                                    <li class="list-inline-item">
+                                        <a href="" class="btn btn-sm">Детальніше</a></li>
+                                    <li class="list-inline-item">
+                                        <a href="">Задати питання</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                <!--./product-->
+                <!--product-->
+                    <div class="product col col-3 text-center">
+                        <div>
+                        <h3 class="text-muted">Станція біологічної очистки CANSYS Bio</h3>
+                        <img src="./images/_DSC4719.jpg" class="img-fluid">
+                            <div>
+                                <ul class="list-inline">
+                                    <li class="list-inline-item">
+                                        <a href="" class="btn btn-sm">Детальніше</a></li>
+                                    <li class="list-inline-item">
+                                        <a href="">Задати питання</a></li>
+                                </ul>
+                            </div>
+                            </div>
+                    </div>
+                <!--./product-->
+                </div>
         </section>
 
         <section>
@@ -109,7 +192,35 @@
 
         <!--footer-->
         <footer class="footer">
-            <p>&COPY; 2021 All rights reserved</p>
+            <div class="cjntainer py-4">
+                <div class="row py-5">
+                    <div class="col col-4 mb-3">
+                        <h3>Services</h3>
+                        <ul class="list-unstyled">
+                            <li class="footer-link">Help</li>
+                            <li class="footer-link">Help</li>
+                            <li class="footer-link">Help</li>
+                            <li class="footer-link">Help</li>
+                            <li class="footer-link">Help</li>
+                        </ul>
+                    </div>
+                    <div class="vol col-4 mb-3">
+                        <h3>Company</h3>
+                        <ul class="list-unstyled">
+                            <li class="footer-link">What we do</li>
+                            <li class="footer-link">FAQs</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="border-top pt-4 row">
+                    <div class="col col-6">
+                    <p>&COPY; 2021 All rights reserved</p>
+                    </div>
+                    <div class="col col-6">
+                        <p>&COPY; 2021 All rights reserved</p>
+                    </div>
+                </div>
+            </div>
         </footer>
     </body>
 </html>
