@@ -27,7 +27,6 @@ body{
 nav {    
     padding: 0.5rem 2rem;
     line-height: 1rem;
-    /*display: flex;*/
     margin-bottom: 0.2rem;
     position: relative;
 }
@@ -49,9 +48,6 @@ nav {
         width: 100%;
     }
     .nav-info-lang {
-        /*position: absolute;
-        top: 1rem;
-        left: 2rem;*/
         list-style: none;
         display: flex;
         align-items: center;
@@ -59,12 +55,8 @@ nav {
     }
     .nav-info-lang li {
         margin: 0 0.5rem;
-        /*display: inline-flex;*/
     }
     .nav-info-cont {
-        /*position: absolute;
-        top: 1rem;
-        left: 25%;*/
         list-style: none;
         display: flex;
         align-items: center;
@@ -75,9 +67,6 @@ nav {
         display: inline-flex;
     }
     .nav-info-soc {
-        /*position: absolute;
-        top: 1rem;
-        left: 75%;*/
         list-style: none;
         display: flex;
         align-items: center;
@@ -88,8 +77,6 @@ nav {
         display: inline-flex;
     }
     .nav-info-s {
-        /*position: absolute;
-        /*top: 1rem;*/
         right: 2rem;*/
         align-items: center;
         justify-content: flex-end;
@@ -125,7 +112,6 @@ nav {
     align-items: center;
     justify-content: space-between;
     text-align: center;
-}
 }
 .nav-info-soc {
     list-style: none;
@@ -250,6 +236,7 @@ a:hover {
     background-color: transparent;
     max-width: 100%;
     margin: 0 auto;
+    text-align: center;
 }
 .text-center {
     text-align: center;
@@ -287,6 +274,7 @@ a:hover {
     color: rgb(32, 86, 204);
     background-color: white;
     padding: 1em 1.5em;
+    text-align: center;
 }
 .btn-service:hover {
     color: orange;
