@@ -29,9 +29,9 @@
                     </div>
                     <div>
                     <ul class="nav-info-soc">
-                        <li><a href="" title="Facebook"><i class="fab fa-facebook"></i></a></li>
-                        <li><a href="" title="Instagram"><i class="fab fa-instagram"></i></a></li>
-                        <li><a href="" title="YouTube"><i class="fab fa-youtube"></i></a></li>
+                        <li><a href="" title="Facebook"><i class="fab fa-facebook social-fb"></i></a></li>
+                        <li><a href="" title="Instagram"><i class="fab fa-instagram social-insta"></i></a></li>
+                        <li><a href="" title="YouTube"><i class="fab fa-youtube social-youtube"></i></a></li>
                     </ul> 
                     </div>
                     <div>
@@ -43,14 +43,14 @@
             </nav>
             <hr color="lightgrey" size="1" width="100%">
             <div class="navbar">
-                <div>
-                    <a href="index.html" title="Home"><img src="./images/Logo_site.jpg" class="nav-img"></a>
+                <div class="col-md-2 navbar-home">
+                    <a href="index.html" title="Home"><img src="./images/Logo_site.jpg" class="nav-img btn-nav-img"></a>
                 </div>
                 <input type="checkbox" id="hamburger">
                     <label for="hamburger">
                         <i class="nav-toggle fas fa-bars"></i>
                     </label>
-                <div>
+                <div class="col-md-10">
                     <ul class="navbar-nav">
                         <li><a href="about.html" class="btn-nav">ПРО НАС</a></li>
                         <li><a href="technology.html" class="btn-nav">ТЕХНОЛОГІЇ CANSYS</a></li>
@@ -65,13 +65,36 @@
         </header>
 
         <!--slider-->
-        <section class="mainslider">
-            <article>
-                <header>
-                    <p>Фото</p>
-                    <h1>Слоган</h1>
-                    <a class="btn-slider">Перейти</a>
-                </header>
+        <section class="mainslider pb-3 d-flex align-items-center">
+            <article class="container slider">
+                <div class="slides">
+                    <div class="overflow">
+                        <div class="items">
+                            <article class="slide">
+                                <img src="images/Slider/IXB9A2626.CR2.jpg">
+                                <div class="row">
+                                    <div class="col-lg-6 text-slide">
+                                        <p>Фото</p>
+                                        <h1>Слоган</h1>
+                                        <a class="btn-slider">Перейти</a>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="slide">
+                                <img src="images/Slider/IXB9A2492.CR2.jpg">
+                            </article>
+                            <article class="slide">
+                                <img src="images/Slider/IXB9A2477.CR2.jpg">
+                            </article>
+                            <article class="slide">
+                                <img src="images/Slider/IXB9A2537.CR2.jpg">
+                            </article>
+                            <article class="slide">
+                                <img src="images/Slider/IXB9A2642.CR2.jpg">
+                            </article>
+                        </div>
+                    </div>
+                </div>
             </article>
         </section>
         
@@ -88,7 +111,7 @@
                 <div class="col col-md-4 col-sm-12 float-left">
                     <header class="btn-service">
                         <i class="fas fa-database"></i>
-                        <h2>Заявка на очисні споруди</h2>
+                        <a href="#openmodal">Заявка на очисні споруди</a>
                     </header>
                 </div>
                 <div class="col col-md-4 col-sm-12 float-left">
@@ -132,7 +155,29 @@
                             <a href="#" class="d-block">
                                 <img src="./images/_DSC4719.jpg" class="img-fluid w-100">
                             </a>
-                            <div>
+                            <div class="product-overlay">
+                                <ul class="list-inline">
+                                    <li class="list-inline-item">
+                                        <a href="" class="btn btn-sm" title="Передзвоніть мені"><i class="fas fa-phone"></i></a></li>
+                                    <li class="list-inline-item">
+                                        <a href="" class="btn btn-sm" title="Дізнатись більше"><i class="fas fa-info"></i></a></li>
+                                    <li class="list-inline-item">
+                                        <a href="Заявка.html" title="Задати питання"><i class="far fa-question-circle"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--./product-->
+                <!--product-->
+                <div class="col col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                    <div class="product text-center">
+                        <div class="position-relative mb-3">
+                            <h3 class="">Станція біологічної очистки CANSYS Bio</h3>
+                            <a href="#" class="d-block">
+                                <img src="./images/_DSC4719.jpg" class="img-fluid w-100">
+                            </a>
+                            <div class="product-overlay">
                                 <ul class="list-inline">
                                     <li class="list-inline-item">
                                         <a href="" class="btn btn-sm" title="Передзвоніть мені"><i class="fas fa-phone"></i></a></li>
@@ -154,29 +199,7 @@
                             <a href="#" class="d-block">
                                 <img src="./images/_DSC4719.jpg" class="img-fluid w-100">
                             </a>
-                            <div>
-                                <ul class="list-inline">
-                                    <li class="list-inline-item">
-                                        <a href="" class="btn btn-sm" title="Передзвоніть мені"><i class="fas fa-phone"></i></a></li>
-                                    <li class="list-inline-item">
-                                        <a href="" class="btn btn-sm" title="Дізнатись більше"><i class="fas fa-info"></i></a></li>
-                                    <li class="list-inline-item">
-                                        <a href="" title="Задати питання"><i class="far fa-question-circle"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--./product-->
-                <!--product-->
-                <div class="col col-xl-4 col-lg-4 col-md-4 col-sm-12">
-                    <div class="product text-center">
-                        <div class="position-relative mb-3">
-                            <h3 class="">Станція біологічної очистки CANSYS Bio</h3>
-                            <a href="#" class="d-block">
-                                <img src="./images/_DSC4719.jpg" class="img-fluid w-100">
-                            </a>
-                            <div>
+                            <div class="product-overlay">
                                 <ul class="list-inline">
                                     <li class="list-inline-item">
                                         <a href="" class="btn btn-sm" title="Передзвоніть мені"><i class="fas fa-phone"></i></a></li>
@@ -192,14 +215,14 @@
                 <!--./product-->
             </div>
             <div class="btn-service">
-                <p>Переглянути наш модельний ряд</p>
+                <p class="brackets">Переглянути наш модельний ряд</p>
             </div>
         </section>
 
         <section>
             <header class="main-text">
                 <!--header-->
-                <h2>ПРО НАС</h2>
+                <h2 class="brackets">ПРО НАС</h2>
             </header>
             <!--catalog-->
             <div class="row">
@@ -305,5 +328,75 @@
                 </div>
             </div>
         </footer>
+
+        <!--modal-->
+        <div class="modal" id="openmodal">
+            <div class="dialog">
+                <a href="#close" title="Close Login Window" class="close">X</a>
+                <div class="col-left">
+                    <div class="login-text">
+                        <h2>Welcome back</h2>
+                        <p>Create Your Account,<br>It's totally free</p>
+                        <a href="#register" class="btn">Sign Up</a>
+                    </div>
+                </div>
+                <div class="col-right">
+                    <div class="login-form">
+                        <h2>Sign In</h2>
+                        <form>
+                            <p>
+                                <label>Username or email adress<span>*</span></label>
+                                <input type="text" placeholder="Username or email" required>
+                            </p>
+                            <p>
+                                <label>Password<span>*</span></label>
+                                <input type="password" placeholder="Password" required>
+                            </p>
+                            <p>
+                                <input type="submit" value="Sign In">
+                            </p>
+                            <p>
+                                <a href="#">Forgot Your Password?</a>
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="register">
+            <div class="dialog">
+                <a href="#cansel" title="Close Login Window" class="close">X</a>
+                <div class="col-left">
+                    <div class="login-text">
+                        <h2>Create Your Account</h2>
+                        <p>Have Account?</p>
+                        <a href="#openmodal" class="btn">Sign In</a>
+                    </div>
+                </div>
+                <div class="col-right">
+                    <div class="login-form">
+                        <h2>Sign Up</h2>
+                        <form>
+                            <p>
+                                <label>Username or email adress<span>*</span></label>
+                                <input type="text" placeholder="Username or email" required>
+                            </p>
+                            <p>
+                                <label>Password<span>*</span></label>
+                                <input type="password" placeholder="Password" required>
+                            </p>
+                            <p>
+                                <label>Confirm Password<span>*</span></label>
+                                <input type="password" placeholder="Confirm Password" required>
+                            </p>
+                            <p>
+                                <input type="submit" value="Sign Up">
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </body>
 </html>
