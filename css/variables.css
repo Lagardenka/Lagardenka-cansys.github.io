@@ -1,6 +1,7 @@
 ::root {
     --black: rgba(2,2,2,0.9);
     --white:#eeee;
+    --transition: all 0.3s linear;
     --root-font-size: 12px;
-    --font-size-default: calc(var(--root-font-size)/14*1rem)
+    --font-size-default: calc(var(--root-font-size)/14*1rem;
 }
