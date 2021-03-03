@@ -10,7 +10,7 @@
     
     </head>
 
-    <body>
+        <body>
         <header>
             <!--navigation-->
             <nav id="nav">
@@ -43,15 +43,15 @@
             </nav>
             <hr color="lightgrey" size="1" width="100%">
             <div class="navbar">
-                <div class="col col-md-2 navbar-home">
+                <div class="col col-lg-2 navbar-home">
                     <a href="index.html" title="Home" class="nav-img btn-nav-img"><img src="./images/Logo_site.jpg"></a>
                 </div>
                 <input type="checkbox" id="hamburger">
                     <label for="hamburger">
                         <i class="nav-toggle fas fa-bars"></i>
                     </label>
-                <div class="col col-md-10">
-                    <ul class="navbar-nav">
+                <div class="navbar-nav col col-lg-10">
+                    <ul class="">
                         <li><a href="about.html" class="btn-nav">ПРО НАС</a></li>
                         <li><a href="technology.html" class="btn-nav">ТЕХНОЛОГІЇ CANSYS</a></li>
                         <li><a href="products.html" class="btn-nav">МОДЕЛЬНИЙ РЯД</a></li>
@@ -63,6 +63,21 @@
             </div>            
             <!--./navigation-->
         </header>
+
+        <aside class="aside">
+            <div class="service-request">
+                <div class="SR-header">
+                    <button class="close-btn"><i class="fas fa-times"></i></button>
+                    <h2 class="logo">Service Request</h2>
+                </div>
+                <div class="SR-item">
+
+                </div>
+                <div class="SR-footer">
+                    
+                </div>
+            </div>
+        </aside>
 
         <!--slider-->
         <section class="mainslider pb-1 d-flex align-items-center">
@@ -120,7 +135,7 @@
                     <header class="btn-service">
                         <i class="fas fa-tools "></i>
                         <br>
-                        <a href="#openmodal">Заявка на сервіс</a>
+                        <a href="#" id="service-request">Заявка на сервіс</a>
                     </header>
                 </div>
                 <div class="col col-md-4 col-sm-12 float-right">
@@ -487,5 +502,7 @@
             </div>
         </div>
 
+        <script defer src="js/app.js">
+        </script>
     </body>
 </html>
