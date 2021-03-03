@@ -34,6 +34,13 @@ nav {
     position: relative;
     background-color:white;
 }
+nav {    
+    padding: 0.5rem 2rem;
+    line-height: 1rem;
+    margin-bottom: 0.2rem;
+    position: relative;
+    background-color:white;
+}
 @media (min-width:560px) {
     .nav-info {
         background-color:white;
@@ -153,7 +160,6 @@ nav {
 .social-youtube:hover {
     color:#c4302b;
 }
-
 /*navbar*/
 @media (min-width: 1160px){
     .navbar {
@@ -269,10 +275,36 @@ nav {
 .d-block {
     display: block;
 }
+
+/* footer */
 .footer {
-    padding: 6em;
+    padding: 1em 0;
+    background-color: white; 
+}
+.container-footer {
     background-color: darkgray;
+    width: 100%;
     color:white;
+    padding: 1em 0;
+}
+.container-footer h3 {
+    font-weight: bold;
+}
+.footer-link a {
+    color: white;
+}
+.footer-link a:hover {
+    color:rgb(32, 86, 204);
+}
+.footer-list-center {
+    text-align: center;
+}
+.footer-right {
+    text-align: right;
+    padding-right: 1em;
+}
+.footer-right a {
+    color: white;
 }
 
 /*slider*/
@@ -372,10 +404,12 @@ a:hover {
     max-width: 100%;
     margin: 0 auto;
     text-align: center;
-    font-weight: bold;
     font-size: 1.2rem;
     letter-spacing: 0.1rem;
     font-weight: semibold;
+}
+.main-text h2 {
+    font-weight: bold;
 }
 .text-center {
     text-align: center;
