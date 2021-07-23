@@ -1,10 +1,18 @@
 <!DOCTYPE html>
 <html lang="ua">
     <head>
+        <title>CANSYS - Автономна каналізація, очисні споруди</title> 
+
         <meta charset="UTF-8">
         <meta name=”viewport” content=”width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0”>
-        <title>CANSYS - Автономна каналізація</title>
-        
+        <meta name="description" content="Автономна каналізація, очисні споруди, виробництво та монтаж установок CANSYS">
+        <meta name="keywords" content="Каналізаційні системи, очисні споруди, автономна каналізація, станція біологічної очистки стічних вод">
+        <meta name="robots" content="">
+        <meta name="author" content="CANSYS">
+        <meta name="copyright" content="CANSYS">
+        <meta name="adress" content="Kyiv, Ukraine">
+        <!-- <meta http-equiv="refresh" content="5; url=index.html"> -->
+                
         <link href="css/variables.css" rel="stylesheet">
         <link href="css/styles.css" rel="stylesheet">
     
@@ -13,80 +21,81 @@
     <body>
         <header>
             <!--navigation-->
-            <nav id="nav">
-                <div class="nav-info">
+            <nav>
+                <div class="navtop">
                     <div>
-                    <ul class="nav-info-lang">
+                        <ul class="navtop__lang">
+                            <li><a href="index.html" title="Українською">UA</a></li>
+                            <li><a href="indexen.html" title="In English">EN</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="navtop__contacts">
+                            <li><a href="" title="Натисніть, щоб скопіювати">+380936648516</a></li>
+                            <li><a href="" title="Натисніть, щоб скопіювати">cansysua@gmail.com</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="navtop__socialmedia">
+                            <li><a href="" title="Facebook"><i class="fab fa-facebook navtop__fb"></i></a></li>
+                            <li><a href="" title="Instagram"><i class="fab fa-instagram navtop__insta"></i></a></li>
+                            <li><a href="" title="YouTube"><i class="fab fa-youtube navtop__youtube"></i></a></li>
+                        </ul> 
+                    </div>
+                    <div class="navtop__search">
+                        <a href="" title="Пошук по сайту"><i class="fas fa-search"></i></a>
+                    </div>
+                <!-- вікно для пошуку -->
+                    <!-- <div class="navtop__opensearch">
+                        <div class="navtop__input">
+                            <input type="search" id="site-search" name="q" aria-label="Search through site content">
+                        </div>
+                        <div class="">
+                            <button class="navtop__searchbutton"><i class="fas fa-search"></i></button>
+                        </div>
+                    </div> -->
+                </div>                
+            </nav>
+            <div class="navbar">
+                <div class="navbar__home">
+                    <a href="index.html" title="На головну" class=""><img src="./images/Logo_site.jpg"></a>
+                </div>
+                <div>
+                    <ul class="navbar__lang">
                         <li><a href="index.html" title="Українською">UA</a></li>
                         <li><a href="indexen.html" title="In English">EN</a></li>
                     </ul>
-                    </div>
-                    <div>
-                    <ul class="nav-info-cont">
-                        <li><a href="" title="Натисніть, щоб скопіювати">+380936648516</a></li>
-                        <li><a href="" title="Натисніть, щоб скопіювати">cansysua@gmail.com</a></li>
-                    </ul>
-                    </div>
-                    <div>
-                    <ul class="nav-info-soc">
-                        <li><a href="" title="Facebook"><i class="fab fa-facebook social-fb"></i></a></li>
-                        <li><a href="" title="Instagram"><i class="fab fa-instagram social-insta"></i></a></li>
-                        <li><a href="" title="YouTube"><i class="fab fa-youtube social-youtube"></i></a></li>
-                    </ul> 
-                    </div>
-                    <div>
-                    <ul class="nav-info-s">
-                        <li><a href="" title="Пошук по сайту"><i class="fas fa-search"></i></a></li>
-                    </ul>
-                    </div>
                 </div>
-            </nav>
-            <div class="navbar">
-                <div class="navbar-home">
-                    <a href="index.html" title="На головну" class=""><img src="./images/Logo_site.jpg"></a>
+                <div class="navbar__contacts">
+                    <a href="" title="Натисніть, щоб скопіювати">+380936648516</a>
                 </div>
                 <input type="checkbox" id="hamburger">
                     <label for="hamburger">
                         <i class="nav-toggle fas fa-bars"></i>
                     </label>
-                <div class="navbar-nav">
+                <div class="navbar__menu">
                     <div>
-                        <a href="about.html" class="btn-nav">ПРО НАС</a>
+                        <a href="about.html" class="navbar__btn">ПРО НАС</a>
                     </div>
                     <div>
-                        <a href="technology.html" class="btn-nav">ТЕХНОЛОГІЇ CANSYS</a>
+                        <a href="technology.html" class="navbar__btn">ТЕХНОЛОГІЇ CANSYS</a>
                     </div>
                     <div>
-                        <a href="products.html" class="btn-nav">МОДЕЛЬНИЙ РЯД</a>
+                        <a href="products.html" class="navbar__btn">Наша продукція</a>
                     </div>
                     <div>
-                        <a href="montage.html" class="btn-nav">МОНТАЖ</a>
+                        <a href="montage.html" class="navbar__btn">МОНТАЖНІ РОБОТИ</a>
                     </div>
                     <div>
-                        <a href="download.html" class="btn-nav">ФАЙЛИ ДЛЯ ЗАВАНТАЖЕННЯ</a>
+                        <a href="download.html" class="navbar__btn">ФАЙЛИ ДЛЯ ЗАВАНТАЖЕННЯ</a>
                     </div>
                     <div>
-                        <a href="contacts.html" class="btn-nav">КОНТАКТИ</a>
+                        <a href="contacts.html" class="navbar__btn">НАШІ КОНТАКТИ</a>
                     </div>
                 </div>
             </div>            
             <!--./navigation-->
         </header>
-
-        <aside class="aside">
-            <div class="service-request">
-                <div class="SR-header">
-                    <button class="close-btn"><i class="fas fa-times"></i></button>
-                    <h2 class="logo">Service Request</h2>
-                </div>
-                <div class="SR-item">
-
-                </div>
-                <div class="SR-footer">
-                    
-                </div>
-            </div>
-        </aside>
 
         <!--slider-->
         <section class="mainslider pb-1 d-flex align-items-center">
@@ -141,7 +150,7 @@
                     </a>
                 </div>
                 <div class="col col-md-4 col-sm-12 float-left">
-                    <a href="#" id="service-request">
+                    <a href="#openmodal" id="service-request">
                         <header class="btn-service">
                             <i class="fas fa-tools "></i><br>Заявка на сервіс
                         </header>
